@@ -1,0 +1,14 @@
+CREATE TABLE AGV (
+  id integer PRIMARY KEY,
+  nome TEXT NOT NULL, 
+  turma TEXT NOT NULL,
+  idade integer NOT NULL);
+
+INSERT INTO AGV (nome, turma, idade)
+VALUES
+('Aline','3DS',17),
+('Rebeca','3DS',17),
+('guilherme','3DS',18),
+('Kaylane','3DS',17);
+
+SELECT * FROM AGV

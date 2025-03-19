@@ -1,0 +1,45 @@
+def exibir_menu():
+    print("bem vindo ao menu de cadastro")
+    print("1 - novo cadastro")
+    print("2 - ver cadastro")
+    print("3 - sair")
+    print("-------------------")
+
+def cadastrar_pessoas(cadastros):
+        nome = input("nome:")
+        idade = input("idade:")
+        turma = input("turma:")
+        curso = input("curso:")
+        cadastros.append({"nome":nome, "idade":idade, "turma":turma, "curso":curso})
+        print("cadastro realizado com sucesso!")
+
+def ver_cadastros(cadastros):
+    if not cadastro: 
+        print("nenhum cadastro realizado.")
+    else:
+        print("\n -----lista de cadastros-----")
+         
+         for i, pessoa in enumerate(cadastro, 1):
+            print(f"{i} . nome: {pessoa['nome']}, idade:
+                {pessoa['idade']} , turma:{pessoa['turma']}, curso:{pessoa['curso']}")
+
+def main():
+    cadastros = []
+    while true :
+        exibir_menu()
+        opção = input("escolha uma opção: ")
+        if opção == "1":
+             cadastrar_pessoa(cadastros)
+        elif opção == "2":
+            ver_cadastros(cadastros)
+
+        elif opção == "3"
+            print("obrigada por utilizar nosso sistema.")
+            break 
+   else:
+            print("opção invalida! tente novamente.")
+
+if _name_ == "_main_":
+    main()
+ 
+            
